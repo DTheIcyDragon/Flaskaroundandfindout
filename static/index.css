@@ -1,0 +1,57 @@
+html{
+    color: white;
+    background: linear-gradient(
+    -90deg,
+    #50010a,
+    #7c1000,
+    black,
+    black,
+    #7c1000,
+    #50010a
+  );
+    background-size: 400%, 400%;
+    animation: 100s linear infinite;
+    animation-name: background_ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes background_ani {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.center{
+      text-align: center;
+      color: navajowhite;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-container > div {
+    animation-name: background_ani;
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+.flex-container > div > button {
+    border-width: 0px;
+    background-color: Transparent;
+    color: cornflowerblue;
+    text-decoration: underline;
+}

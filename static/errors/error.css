@@ -1,0 +1,18 @@
+html{
+    background: linear-gradient(86deg, rgba(36,0,0,1) 0%, rgba(88,10,180,1) 50%, rgba(71,178,214,1) 100%);
+  );
+}
+
+h2{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.WIP{
+    border: 2px solid cornflowerblue;
+    border-radius: 3px;
+    background-color: darkgray;
+    text-align: center;
+    color: navajowhite;
+    font-family: Arial, Helvetica, sans-serif;
+}

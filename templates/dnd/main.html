@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main - DnD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dnd/main.css') }}">
+</head>
+<body>
+    <div class="flex-container">
+        <div><button onclick="location.href='/'">The Den</button></div>
+        <div><button onclick="location.href='/wip'">Events</button></div>
+        <div><button onclick="location.href='/wip'">Events</button></div>
+        <div><button onclick="location.href='/wip'">Events</button></div>
+    </div>
+    {% for entry in entries %}
+        <div class="storytime">
+            <h2>{{entry[1]}}</h2>
+            <p>{{entry[2]}}</p>
+        </div><br>
+    {% endfor %}
+</body>
+</html>

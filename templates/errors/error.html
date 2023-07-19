@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='errors/error.css') }}">
+</head>
+<body>
+
+  <div class = "WIP">
+    <h2>
+      {{error}}
+    </h2>
+      {% if web_dev %}
+      <img src="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/web-developer-meme7.jpg" alt="Meme">
+      {% endif %}
+  </div>
+
+</body>
+</html>
